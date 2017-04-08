@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>luyuexin</title>
+	<link rel="stylesheet" href="css/global.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">luyuexin</div>
+    <div id="slidebar">luyuexin</div>
+    <div id="content">
+    	<a name="music">
+			<link rel="stylesheet" href="css/audio.css">
+			<script type="text/javascript" src="js/audio.js"></script>
+			<audio id="myaudio" src="" autoplay="autoplay" onended="playMusic(1,0)" ontimeupdate="timeupdate()" ></audio>
+			<div style="float: left; margin-left: 50px; width: 450px; height: 200px; color: #0C6;">
+				<span id="musicTitle"></span><br><br>
+				<span id="currTime" >00:00:00</span>
+				<canvas id="canvas" width="286" height="4"> 浏览器不支持画布</canvas>
+				<span id="totalTime" >00:00:00</span><br><br>
+				<input id="lastMusic" type="button" value="上一首" />
+				<input id="rewind" type="button" value="<<" />
+				<input id="playMusic" type="button" value="暂停" />
+				<input id="fast" type="button" value=">>" />
+				<input id="nextMusic" type="button" value="下一首" />
+				<select id="playState">
+					<option value="0">单曲循环</option>
+					<option value="1" selected>列表循环</option>
+					<option value="2">随机播放</option>
+				</select>
+				<ul id="box" style="border: 1px solid #444; padding: 0px; height: 200px; width: 400px; overflow-y: auto;"></ul>
+			</div>
+        </a>
+    </div>
+</div>
+</body>
+</html>

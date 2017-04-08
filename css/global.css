@@ -1,0 +1,33 @@
+
+body,td,th {
+	font-size: 9px;
+}
+body {
+	background-image: url(../images/Ubuntu03.jpg);
+}
+#container {
+	height: 900px;
+	width: 780px;
+	background-color: #088;
+	margin: auto;
+}
+#header {
+	height: 100px;
+	width: 780px;
+	background-color: #066;
+	margin: auto;
+}
+#slidebar {
+	float: left;
+	width: 160px;
+	height: 800px;
+	background-color: #077;	
+}
+#content {
+	float: left;
+	width: 600px;
+	height: 780px;
+	background-color: #076;
+	padding: 10px;
+}
+
