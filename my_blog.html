@@ -9,32 +9,55 @@
 
 <body>
 <div id="container">
-	<div id="header">luyuexin</div>
-    <div id="slidebar">luyuexin</div>
+	<div id="header">		
+		<a name="my_top">luyuexin<a>
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="0">
+	<tr><td>
+    <div id="slidebar">
+		<ul type="disk;">
+			<li><a href="#my_top">TOP</a>
+			<li><a href="#my_doc">文字</a>
+			<li><a href="#my_music">音乐</a>
+		</ul>
+	</div>
+	</td><td>
     <div id="content">
-    	<a name="music">
+		<a name="my_doc">
+		my_doc
+		</a>
+		<hr>
+		
+    	<a name="my_music">
+		<div style="height: 320px;">
 			<link rel="stylesheet" href="css/audio.css">
 			<script type="text/javascript" src="js/audio.js"></script>
-			<audio id="myaudio" src="" autoplay="autoplay" onended="playMusic(1,0)" ontimeupdate="timeupdate()" ></audio>
-			<div style="float: left; margin-left: 50px; width: 450px; height: 200px; color: #0C6;">
-				<span id="musicTitle"></span><br><br>
+			<audio id="myaudio" src="" preload="preload" onended="playMusic(1,0)" ontimeupdate="timeupdate()" ></audio>
+			<div style="margin-left: 60px; color: #0C6;">
+				<span id="musicTitle" style="height:50px; width:500px; overflow-x:hidden; white-space: nowrap; text-overflow:ellipsis; display:block;"></span>
 				<span id="currTime" >00:00:00</span>
 				<canvas id="canvas" width="286" height="4"> 浏览器不支持画布</canvas>
 				<span id="totalTime" >00:00:00</span><br><br>
 				<input id="lastMusic" type="button" value="上一首" />
 				<input id="rewind" type="button" value="<<" />
-				<input id="playMusic" type="button" value="暂停" />
+				<input id="playMusic" type="button" value="播放" />
 				<input id="fast" type="button" value=">>" />
 				<input id="nextMusic" type="button" value="下一首" />
 				<select id="playState">
 					<option value="0">单曲循环</option>
-					<option value="1" selected>列表循环</option>
-					<option value="2">随机播放</option>
+					<option value="1">列表循环</option>
+					<option value="2" selected>随机播放</option>
 				</select>
 				<ul id="box" style="border: 1px solid #444; padding: 0px; height: 200px; width: 400px; overflow-y: auto;"></ul>
 			</div>
+		</div>
         </a>
+		<hr>
+		
     </div>
+	</td></tr>
+	</table>
 </div>
 </body>
 </html>
