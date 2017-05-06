@@ -1,4 +1,3 @@
-
 body,td,th {
 	font-size: 9px;
 }
@@ -16,6 +15,11 @@ body {
 	width: 780px;
 	background-color: #066;
 	margin: auto;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	background-image: none;
 }
 #slidebar {
 	float: left;
@@ -30,4 +34,12 @@ body {
 	background-color: #076;
 	padding: 10px;
 }
-
+#container table tr td #slidebar ul li a {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 25px;
+	text-transform: none;
+	color: #9C6;
+}
